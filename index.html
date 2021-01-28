@@ -8,16 +8,16 @@
     <title>M2 Evaluación Intermedia</title>
   </head>
   <body class="body">
-    <header>
-        <h1 class="header__title">Adivina el número</h1>
+    <header class="header">
+        <h1>Adivina el número</h1>
     </header>
-    <main class="game">
+    <main class="game centralColumn">
         <h4 class="game__instructions">Hemos generado un número aleatorio del 1 al 100, trata de adivinarlo. Te diré dando pistas y contando tus intentos.</h4>
         <form class="game__form" action=>
             <label class ="game__form--label" for="numberGuess">Introduce aquí tu número:</label>
             <input id="numberGuess" type="text"
             value=""
-            name=""
+            name="tryNumber"
             class="js-trynumber"/>
             <input type="button" value="Prueba" class="game__form--button js-trybtn" />
         </form>
