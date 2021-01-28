@@ -1,0 +1,12 @@
+.game__display--clues {
+    margin: 10px 0px;
+    padding: 5px;
+    border: 1px solid black;
+    max-width: 500px;
+}
+.game__display--tries {
+    margin: 10px 0px;
+    padding: 5px;
+    border: 1px solid black;
+    max-width: 500px;
+}
