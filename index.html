@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>M2 Evaluación Intermedia</title>
   </head>
-  <body>
+  <body class="body">
     <header>
-        <h1>Adivina el número</h1>
+        <h1 class="header__title">Adivina el número</h1>
     </header>
     <main class="game">
-        <p>Hemos generado un número aleatorio del 1 al 100, trata de adivinarlo. Te diré dando pistas y contando tus intentos.</p>
+        <h4 class="game__instructions">Hemos generado un número aleatorio del 1 al 100, trata de adivinarlo. Te diré dando pistas y contando tus intentos.</h4>
         <form class="game__form" action=>
             <label class ="game__form--label" for="numberGuess">Introduce aquí tu número:</label>
             <input id="numberGuess" type="text"
@@ -22,8 +22,16 @@
             <input type="button" value="Prueba" class="game__form--button js-trybtn" />
         </form>
         <div class="game__display">
-            <div class="game__display--clues">Pista: <span class="clue__display--window js-clue">Escribe el número y dale a Prueba</span></div>
-            <div class="game__display--tries">Número de intentos: <span class="tries__display--window js-tryCounter">0</span></div>
+            <div class="game__display--clues">
+                <h3 class="clue__display--title">Pista:</h3> 
+                <span class="clue__display--window">
+                    <p class="js-clue">Escribe el número y dale a Prueba</p>
+                </span>
+            </div>
+            <div class="game__display--tries">
+                <h3 class="tries__display--title">Número de intentos: </h3>
+                <span class="tries__display--window js-tryCounter">0</span>
+            </div>
         </div>
     </main>
     <script src="./main.js"></script>

@@ -1,12 +1,40 @@
+.body {
+    margin: 0 15px;
+}
+@media all and (min-width:720px) {
+    .body {
+        margin: 0 45px;
+    }
+}
+@media all and (min-width:1200px) {
+    .body {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
+.game__display {
+    max-width: inherit;
+}
 .game__display--clues {
-    margin: 10px 0px;
-    padding: 5px;
     border: 1px solid black;
-    max-width: 500px;
 }
 .game__display--tries {
-    margin: 10px 0px;
-    padding: 5px;
     border: 1px solid black;
-    max-width: 500px;
+}
+.clue__display--title {
+    display: inline-block;
+    margin: 0;
+}
+.clue__display--window {
+    display: inline-block;
+}
+.tries__display--title {
+    display: inline-block;
+    margin: 0;
+}
+.tries__display--window {
+    display: inline-block;
+}
+.js-clue {
+    margin: 0;
 }

@@ -3,7 +3,7 @@
 const tryBtnElement = document.querySelector('.js-trybtn');
 const tryNumberElement = document.querySelector('.js-trynumber');
 const clueElement = document.querySelector('.js-clue');
-const tryCounter = document.querySelector('.js-tryCounter');
+const tryCounterElement = document.querySelector('.js-tryCounter');
 const randomNumber = Math.ceil(Math.random() * 100);
 console.log(`El número aleatorio es ${randomNumber}`)
 
@@ -13,7 +13,7 @@ function handleTryBtn() {
 };
 
 function runCounter (){
-    tryCounter.innerHTML = `${parseInt(tryCounter.innerHTML) +1}`;
+    tryCounterElement.innerHTML = `${parseInt(tryCounterElement.innerHTML) +1}`;
 }
 
 function giveClue () {
