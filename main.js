@@ -7,13 +7,16 @@ const tryCounter = document.querySelector('.js-tryCounter');
 const randomNumber = Math.ceil(Math.random() * 100);
 console.log(`El número aleatorio es ${randomNumber}`)
 
-/* function getRandomNumber() {
-  const randomNumber = Math.ceil(Math.random() * 100);
-  console.log(`El número aleatorio es ${randomNumber}`);
-}; */
-
-
 function handleTryBtn() {
+    giveClue();
+    runCounter();
+};
+
+function runCounter (){
+    tryCounter.innerHTML = `${parseInt(tryCounter.innerHTML) +1}`;
+}
+
+function giveClue () {
     const tryNumberValue =  parseInt(tryNumberElement.value);
     console.log(tryNumberValue);
     if (tryNumberValue <= 0) {
@@ -31,8 +34,7 @@ function handleTryBtn() {
     else if (tryNumberValue === randomNumber) {
         clueElement.innerHTML = 'Lo has adivinado! Minipunto para ti!';
     };
-    tryCounter.innerHTML = `${parseInt(tryCounter.innerHTML) +1}`;
-};
+}
 
 tryBtnElement.addEventListener('click', handleTryBtn);
 
